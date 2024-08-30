@@ -7,4 +7,7 @@ const a
 myName = a
 
 yourName = myName
-console.log(yourName)
+
+function add(x, y){
+    return x + y
+}
