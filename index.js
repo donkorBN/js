@@ -1,12 +1,21 @@
-console.log("Polishing ES6")
-var myName = "Enyo"
-var yourName = "Esi"
+const boy = "Gtame"
+const girl = "Rhoda"
 
+console.log(girl+ " " +boy)
 
-myName = a
+let sum = 0
 
-yourName = myName
-
-function add(x, y){
-    return x + y
+if (boy === "Gtame"){
+    console.log("Yes it is")
 }
+
+count = 0
+word = "Baboon"
+
+vowels = ['a','e','i','o','u']
+
+for (vowels.includes(word){
+    count+=1
+}
+
+console.log(count)
