@@ -14,8 +14,8 @@ word = "Baboon"
 
 vowels = ['a','e','i','o','u']
 
-for (vowels.includes(word){
-    count+=1
+if (vowels.length > 0){
+    console.log(vowels)
 }
 
-console.log(count)
+console.log(vowels[3] + " " + vowels[4])
