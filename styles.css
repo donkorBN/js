@@ -33,3 +33,25 @@ button{
     align-items: center;
     margin: 20px;
 }
+
+.rock{
+    margin: 0 20px;
+    border-radius: 35px;
+}
+
+.paper{
+    margin: 0 20px;
+    border-radius: 35px;
+}
+.scissors{
+    margin: 0 20px;
+    border-radius: 35px;
+
+}
+
+.rock:hover, .scissors:hover, .paper:hover{
+    margin: 0 20px;
+    border-radius: 35px;
+    color: blue;
+    background-color: white;
+}
