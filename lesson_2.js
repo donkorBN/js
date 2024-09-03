@@ -10,9 +10,7 @@ console.log(name)
 
 console.log(name + "" + name2)
 
-const order = {
-    coffee: 1,
-    bagel:1
-};
+coffee = 3
+bagel = 5
 
-console.log(order.bagel)
+console.log('Total Cost: $' +(coffee + bagel))
