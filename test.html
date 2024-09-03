@@ -14,10 +14,6 @@
     Cart Quantity
   </p>
 
-  <button onClick="console.log(cartQuantity)">
-    Show Quantity
-  </button>
-
   <button onclick="console.log(cartQuantity ++ )">
     Add to Cart
   </button>
@@ -26,8 +22,12 @@
     +2
   </button>
 
-  <button>
+  <button onclick="console.log(cartQuantity + 3)">
     +3
+  </button>
+
+  <button onClick="console.log(cartQuantity)">
+    Show Quantity
   </button>
 
   <button onclick="console.log('Cart was Reset'); cartQuantity = 0">
