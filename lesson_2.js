@@ -14,3 +14,4 @@ coffee = 3
 bagel = 5
 
 console.log('Total Cost: $' +(coffee + bagel))
+console.log(`Total Cost: $${bagel + coffee}`)
