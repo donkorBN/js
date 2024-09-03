@@ -14,3 +14,22 @@ button{
     margin: 4px 0;
     box-shadow: 1px 1px 3px green;
 }
+
+.card{
+    background-color: red;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btd{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; ;
+    align-items: center;
+    margin: 20px;
+}
