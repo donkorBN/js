@@ -5,20 +5,31 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-  <p onclick="
-  randomNumber = Math.random()
-
-  if (randomNumber >0 && randomNumber <=1/3){
-    console.log('Rock')
-  } else if (randomNumber >1/3 && randomNumber <=2/3){
-    console.log('Paper')
-  } else if (randomNumber > 2/3 && randomNumber < 1) {
-    console.log('Scissors')
-  }
-">Rock Paper Scissors</p>
+  <p>Rock Paper Scissors</p>
 
   <button onclick="
-if">Rock</button>
+  randomNumber = Math.random()
+  const computerMove = ''
+  let result = ''
+
+  if (randomNumber > 0 && randomNumber <=1/3){
+    const computerMove = 'Rock'
+  } else if (randomNumber >1/3 && randomNumber <=2/3){
+    const computerMove = 'Paper'
+  } else if (randomNumber > 2/3 && randomNumber < 1) {
+    const computerMove = 'Scissors'
+  }
+
+  if (computerMove === 'Rock'){
+    result = 'Tie'
+    console.log('It is a fair tie');
+  } else if (computerMove === 'Paper'){
+    result = 'You lose'
+    console.log('Computer picked Paper');
+  } else if (computerMove === 'Scissors'){
+    console.log('You lose. Computer picked rock');
+  }
+">Rock</button>
   <button>Paper</button>
   <button>Scissors</button>
 
