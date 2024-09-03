@@ -11,3 +11,11 @@ alert('donkorBN')
 
 //1e
 2+2-5
+
+//1f
+document.body.innerHTML = 'Good morning'
+
+//1g
+document.body.innerHTML = 'donkorBN'
+
+document.body.innerHTML = ''
