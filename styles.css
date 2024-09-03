@@ -1,24 +1,16 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
-img{
-    max-width: 100%;
-    display: block;
-    margin-right: 0px;
+.rps{
+    font-family: Verdana, Geneva, Tahoma, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(0,0,0);
 }
 
-li{
-    font-family: Arial, Helvetica, sans-serif;
-    display: inline-block;
-    color: black;
-    align-items: center;
-    background-color: rgb(230, 230, 230);
-}
-
-header{
-    text-align: center;
-    align-content: center;
-    margin: 0 20px;
-    padding: 10px;
-    color: blue;
+button{
+    color: white;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 16px;
+    margin: 4px 0;
+    box-shadow: 1px 1px 3px green;
 }
