@@ -14,23 +14,30 @@
     Cart Quantity
   </p>
 
-  <button onclick="console.log(cartQuantity ++ )">
+  <button onclick="
+  cartQuantity +=1
+  console.log('Added')
+">
     Add to Cart
   </button>
 
-  <button onclick="console.log(cartQuantity+ 2)">
+  <button onclick="
+  cartQuantity= cartQuantity + 2
+  console.log(cartQuantity)">
     +2
   </button>
 
-  <button onclick="console.log(cartQuantity + 3)">
+  <button onclick="
+  cartQuantity = cartQuantity + 3
+  console.log(cartQuantity)">
     +3
   </button>
 
-  <button onClick="console.log(cartQuantity)">
+  <button onClick="console.log(`Cart Quantity: ${cartQuantity}`)">
     Show Quantity
   </button>
 
-  <button onclick="console.log('Cart was Reset'); console.log(cartQuantity)">
+  <button onclick="console.log('Cart was Reset'); console.log(cartQuantity = 0)">
     Reset Cart
   </button>
 
