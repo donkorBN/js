@@ -9,16 +9,19 @@
   <p>Orders under $40 = +$10 shipping</p>
   <p>Orders over $40 = Free Shipping</p>
 
-  <input class="price" placeholder="Total cost of order"> <button onclick="calculateTotal()">Calculate</button>
+  <input class="price" placeholder="Total cost of order" onkeydown="if (event.key === 'Enter'){calculateTotal()}"> <button onclick="calculateTotal()">Calculate</button>
+  <p class="cost"></p>
  <script>
      function calculateTotal(){
          const inputField = document.querySelector('.price');
-         const cost = inputField.value
-         if (cost > 50){
-             document.querySelector('.value').innerHTML = inputField
+         let cost = Number(inputField.value)
+
+         if (cost < 40){
+             cost = (cost + 10)
          } else{
-             cost + 10
+             cost
          }
+         document.querySelector('.cost').innerHTML = `$${cost}`
      }
 
 
