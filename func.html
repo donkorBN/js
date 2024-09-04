@@ -1,16 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Functions</title>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors</title>
+  <link rel = "stylesheet" href="styles.css">
 </head>
 <body>
-  <script>
-    function diallo(){
-       console.log("MAN U is shit")
-       console.log('3-0 against Liverpool')
+<div class="card">
+  <p class="rps">Rock Paper Scissors</p>
+</div>
+
+<div class="btd">
+  <button class ="rock" onclick="
+   compMove()
+    console.log(computerMove)
+
+    let result = ''
+
+    if (computerMove === 'Rock'){
+      result = 'Tie'
+      console.log(result)
+    } else if (computerMove === 'Paper'){
+      result = 'You lose'
+      console.log(result)
+    } else if (computerMove === 'Scissors'){
+      result = 'You WIN!'
+      console.log(result)
+      }
+    alert(`You picked rock. Computer picked ${computerMove}. ${result}`)
+
+    ">Rock</button>
+
+  <button class = "paper"  onclick="
+     compMove()
+    console.log(computerMove)
+
+    let result = ''
+
+    if (computerMove === 'Rock'){
+      result = 'You WIN'
+      console.log(result)
+    } else if (computerMove === 'Paper'){
+      result = 'TIE'
+      console.log(result)
+    } else if (computerMove === 'Scissors'){
+      result = 'You LOSE!'
+      console.log(result)
+      }
+    alert(`You picked paper. Computer picked ${computerMove}. ${result}`)
+    ">Paper</button>
+
+  <button class = "scissors" onclick="
+    compMove()
+    console.log(computerMove)
+
+    let result = ''
+
+    if (computerMove === 'Rock'){
+      result = 'You LOSE'
+      console.log(result)
+    } else if (computerMove === 'Paper'){
+      result = 'You WIN'
+      console.log(result)
+    } else if (computerMove === 'Scissors'){
+      result = 'You tie!'
+      console.log(result)
+      }
+
+    alert(`You picked scissors. Computer picked ${computerMove}. ${result}`)
+    ">Scissors</button>
+</div>
+
+<script>
+  let computerMove = ''
+  function compMove(){
+    randomNumber = Math.random()
+    let computerMove = ''
+
+    if (randomNumber >0 && randomNumber <=1/3){
+      computerMove = 'Rock'
+    } else if (randomNumber >1/3 && randomNumber <=2/3){
+      computerMove = 'Paper'
+    } else if (randomNumber > 2/3 && randomNumber < 1) {
+      computerMove = 'Scissors'
     }
-    diallo()
-  </script>
+  }
+
+</script>
 </body>
 </html>
