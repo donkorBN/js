@@ -37,7 +37,11 @@
 </div>
 
 <script>
-    const score = JSON.parse(localStorage.getItem('score'))
+    const score = {
+        Wins: 0,
+        Losses: 0,
+        Ties: 0
+    };
 
     let computerMove = ''
     function compMove() {
