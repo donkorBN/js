@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Rock Paper Scissors</title>
-  <link rel = "stylesheet" href="styles.css">
 </head>
 <body>
 <div class="card">
@@ -114,10 +113,9 @@
     localStorage.setItem('score', JSON.stringify(score))
 
     displayScore()
-    displayMove()
+    document.querySelector('.js-results').innerHTML = result
+    document.querySelector('.js-moves').innerHTML = `You ${playerMove} - ${computerMove} Computer`
 
-    alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
-        Wins: ${score.Wins}, Ties: ${score.Ties}, Losses: ${score.Losses}`)
   }
 
   function displayScore(){
@@ -126,9 +124,6 @@
 
   }
 
-  function displayMove{
-    document.querySelector('.js-result').innerHTML = `You ${playerMove} - ${computerMove} Computer`
-  }
 
 </script>
 </body>
