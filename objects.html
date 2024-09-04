@@ -33,6 +33,7 @@
         Losses: 0,
         Ties: 0
     };
+
     let computerMove = ''
     function compMove() {
         randomNumber = Math.random()
@@ -54,7 +55,7 @@
         score.Losses++
     }
     function playGame(playerMove){
-        let result = '';
+        let result = ''
 
         if(playerMove === 'Scissors'){
             if (computerMove === 'Rock'){
@@ -69,7 +70,6 @@
             }}
 
         if (playerMove === 'Paper'){
-            let result = '';
 
             if (computerMove === 'Rock'){
                 result = 'Tie'
@@ -83,7 +83,6 @@
             }
 
             if (playerMove === 'Rock'){
-                let result = '';
 
                 if (computerMove === 'Rock'){
                     result = 'You win'
@@ -98,7 +97,8 @@
             }
         }
 
-        alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}`)
+        alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
+        ${score.Wins, score.Ties, score.Losses}`)
     }
 
 </script>
