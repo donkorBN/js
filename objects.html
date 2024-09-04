@@ -25,6 +25,15 @@
     compMove()
     playGame('Scissors')
     ">Scissors</button>
+
+    <button class = "scissors" onclick="
+    score.Wins = 0
+    score.Ties = 0
+    score.Losses = 0
+
+    alert('Score Has Been Reset')
+    console.log('Reset')
+    ">Reset Score</button>
 </div>
 
 <script>
@@ -47,13 +56,6 @@
         }
     }
 
-    if (result === 'You win'){
-        score.Wins +=1
-    } else if (result === 'TIE') {
-        score.Ties+=1
-    } else if (result === 'You lose'){
-        score.Losses+=1
-    }
     function playGame(playerMove){
 
         if(playerMove === 'Scissors'){
@@ -93,6 +95,16 @@
                     }
             }
         }
+
+        if (result === 'You win'){
+            score.Wins +=1
+        } else if (result === 'TIE') {
+            score.Ties+=1
+        } else if (result === 'You lose'){
+            score.Losses+=1
+        }
+
+
 
         alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
         Wins: ${score.Wins}, Ties: ${score.Ties}, Losses: ${score.Losses}`)
