@@ -28,6 +28,11 @@
 </div>
 
 <script>
+    const score = {
+        Wins: 0,
+        Losses: 0,
+        Ties: 0
+    };
     let computerMove = ''
     function compMove() {
         randomNumber = Math.random()
@@ -41,18 +46,25 @@
         }
     }
 
+    if (result === 'You win'){
+        score.Wins ++
+    } else if (result === 'TIE') {
+        score.Ties++
+    } else if (result === 'You lose'){
+        score.Losses++
+    }
     function playGame(playerMove){
         let result = '';
 
         if(playerMove === 'Scissors'){
             if (computerMove === 'Rock'){
-                result = 'You LOSE'
+                result = 'You lose'
                 console.log(result)
             } else if (computerMove === 'Paper'){
-                result = 'You WIN'
+                result = 'You win'
                 console.log(result)
             } else if (computerMove === 'Scissors'){
-                result = 'You tie!'
+                result = 'TIE!'
                 console.log(result)
             }}
 
@@ -74,13 +86,13 @@
                 let result = '';
 
                 if (computerMove === 'Rock'){
-                    result = 'You WIN'
+                    result = 'You win'
                     console.log(result)
                 } else if (computerMove === 'Paper'){
                     result = 'TIE'
                     console.log(result)
                 } else if (computerMove === 'Scissors'){
-                    result = 'You LOSE!'
+                    result = 'You lose'
                     console.log(result)
                 }
             }
