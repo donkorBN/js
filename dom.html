@@ -6,15 +6,19 @@
 </head>
 <body>
   <p > YouTube Subscribe Button</p>
-  <button onclick=" const ytButton = document.querySelector('.subscribe');
-    if (ytButton.innerHTML === 'Subscribe'){
-        ytButton.innerHTML = 'Subscribed'
-    } else{
-        ytButton.innerHTML = 'Subscribe'
-    }
-
+  <button onclick=" subscribe()
     " class="subscribe"> Subscribe </button>
  <script>
+
+     function subscribe(){
+         const ytButton = document.querySelector('.subscribe');
+         if (ytButton.innerText === 'Subscribe'){
+             ytButton.innerText = 'Subscribed'
+         } else{
+             ytButton.innerHTML = 'Subscribe'
+         }
+
+     }
 
  </script>
 </body>
