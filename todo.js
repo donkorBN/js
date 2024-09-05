@@ -1,6 +1,5 @@
 const todoList = []
 
-let inputValue = input.value
 
 function addTodo(){
     const inputElement = document.querySelector('.input_field');
@@ -12,12 +11,7 @@ function addTodo(){
     todoList.push(taskName)
     console.log(todoList)
 
-    inputValue = '';
+    inputElement.value = '';
+
     }
 
-function displayTodo(){
-    const display = document.querySelector('.display');
-    const taskName = display.value;
-
-    display.innerHTML(todoList[taskName]);
-}
