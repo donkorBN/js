@@ -9,8 +9,10 @@ for (let i = 0; index < todoList.length; i++){
 
 const nums = [4,4,3,3,5,5,31,6,]
 
+let total = 0
+
 for (let i = 0; i < nums.length; i++) {
     const num = nums[i]
-    sum += num
+    total += num
 }
-console.log(sum)
+console.log(total)
