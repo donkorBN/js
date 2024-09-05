@@ -4,3 +4,5 @@
 //going to start using html files from now, writing js codes in script tags
 
 //starting tomorrow Sunday, 2 September
+
+//completed, making a lot of progress
