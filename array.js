@@ -11,8 +11,16 @@ const nums = [4,4,3,3,5,5,31,6,]
 
 let total = 0
 
-for (let i = 0; i < nums.length; i++) {
+for (let i =0; i<nums.length; i++){
     const num = nums[i]
     total += num
 }
+
 console.log(total)
+
+for (let i = 0; i < nums.length; i++) {
+    const num = nums[i]
+    nums[i] = num *2
+}
+
+console.log((nums))
