@@ -11,3 +11,5 @@ const multiply = function(x,y) {
 const multiply2 = (x,y) => {
     console.log( x * y)
 }
+
+//arrows
