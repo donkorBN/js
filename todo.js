@@ -8,7 +8,9 @@ function displayTask() {
 
     let todoListHTML = ''
     for (let i = 0; i < todoList.length; i++) {
-        const todo = todoList[i]
+        const todoObject = todoList[i]
+        const name = todoObject.name
+        const dueDate = todoObject.dueDate
         const html = `
         <p>
             ${todo} 
@@ -24,14 +26,21 @@ function displayTask() {
 }
 
 displayTask()
+
 function addTodo(){
     const inputElement = document.querySelector('.input_field');
     const taskName = inputElement.value;
+    const dateElement = document.querySelector('.date_field');
+    const dueDate = dateElement.value;
+
 
     //const inputField = document.querySelector('.price');
     //let cost = Number(inputField.value)
 
-    todoList.push(taskName)
+    todoList.push({
+        name,
+        dueDate,
+    });
     console.log(todoList)
 
     inputElement.value = '';
