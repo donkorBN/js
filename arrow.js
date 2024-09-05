@@ -12,4 +12,4 @@ const multiply2 = (x,y) => {
     console.log( x * y)
 }
 
-//arrows
+//arrows //clear
