@@ -8,3 +8,7 @@
 //completed, making a lot of progress
 
 //started the js course on tuesday, got easier cause I know python
+
+//starting amazon project tomorrow, 6 Sep 2024
+
+//clear
