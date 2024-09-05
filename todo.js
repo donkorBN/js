@@ -11,4 +11,13 @@ function addTodo(){
 
     todoList.push(taskName)
     console.log(todoList)
+
+    inputValue = '';
     }
+
+function displayTodo(){
+    const display = document.querySelector('.display');
+    const taskName = display.value;
+
+    display.innerHTML(todoList[taskName]);
+}
