@@ -5,7 +5,9 @@ function displayTask() {
     let todoListHTML = ''
     for (let i = 0; i < todoList.length; i++) {
         const todo = todoList[i]
-        const html = `<p>${todo} <button>Delete</button></p> `
+        const html = `
+        <p>${todo} 
+        <button>Delete</button></p> `
         todoListHTML += html
     }
     document.querySelector('.js-todo-list').innerHTML = todoListHTML;
