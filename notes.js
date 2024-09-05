@@ -6,3 +6,5 @@
 //starting tomorrow Sunday, 2 September
 
 //completed, making a lot of progress
+
+//started the js course on tuesday, got easier cause I know python
