@@ -55,3 +55,11 @@ function arraySwap(arr = []){
 }
 
 arraySwap([1,2,3,4,5,6])
+
+//rewriting with arrow functions
+ getLast = (arr=[]) => {
+    lastIndex = arr[0];
+    console.log(lastIndex)
+ }
+
+ getLast([2,5,6,4])
