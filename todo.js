@@ -36,6 +36,7 @@ function addTodo(){
 
     //const inputField = document.querySelector('.price');
     //let cost = Number(inputField.value)
+    //adds new selection to the array and prints logs it on the console
 
     todoList.push({
         name,
