@@ -17,4 +17,6 @@ img{
 .img-container, .btn-container {
     position: relative;
     background-color: blue;
+    margin: 1rem;
+
 }
