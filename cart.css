@@ -25,9 +25,11 @@ img{
 
 .btn-container{
   background: #255;
+  margin: 0;
+  align-self: center;
 }
 
 button{
     border: none;
-    d
+    display: inline-block;
 }
