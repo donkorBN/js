@@ -7,6 +7,7 @@ const name = "My name is: "
 let name2 = "donkorBN"
 
 console.log(name)
+console.log(name2)
 
 console.log(name + "" + name2)
 
