@@ -27,6 +27,7 @@ img{
   background: #255;
   margin: 0;
   align-self: center;
+  display: flex;
 }
 
 button{
