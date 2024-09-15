@@ -19,7 +19,7 @@ img{
 .img-container {
       background: #000;
       align-items: end;
-
+      display: flex;
 }
 
 
