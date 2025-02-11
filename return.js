@@ -1,9 +1,14 @@
-const add = (name, age) => {
+const add = (name, age = 12) => {
     if (name === "Drew"){
         console.log("Got you")
     } else {
         console.log("No")
     }
+
+    add.age = age;
+
+    return name;
+    return age;
 }
 
-add("Drew")
+const _drew = add("Drew", 14)
